@@ -1,0 +1,31 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm specific ignores
+.idea/
+# Keep specific .idea files if they are meant to be shared (rare, usually for team settings)
+# For example, if you have shared run configurations or code styles:
+# !.idea/runConfigurations/
+# !.idea/codeStyles/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
