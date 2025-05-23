@@ -8,7 +8,7 @@ def sidebar_inputs(DEFAULT_INVESTMENT, DEFAULT_YEARS, DEFAULT_ALLOC, DEFAULT_CAG
     st.sidebar.header("Input Parameters")
 
     investment = st.sidebar.number_input(
-        "Total Investment (₹)", min_value=500, max_value=1_000_000_000,
+        "Total Investment (₹)", min_value=0, max_value=1_000_000_000,
         value=DEFAULT_INVESTMENT, step=5000
     )
     years = st.sidebar.number_input(
