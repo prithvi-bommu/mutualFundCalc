@@ -105,7 +105,7 @@ results = calc_portfolio_projection(breakdown, cagr_dict, years)
 proj_table = build_summary_table(results)
 for sc in proj_table.index:
     total_corpus = proj_table.loc[sc, 'Total Corpus']
-    percent_return = ((float(str(total_corpus).replace('₹','').replace(',','')) - investment) / investment) * 100
+    percent_return = 0.0 if investment == 0 else ((float(str(total_corpus).replace('₹','').replace(',','')) - investment) / investment) * 100
     percent_str = f"{percent_return:.1f}%"
     # Add to index name
     proj_table.rename(index={sc: f"{sc} ({percent_str})"}, inplace=True)
