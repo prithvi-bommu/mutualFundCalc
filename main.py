@@ -77,7 +77,6 @@ def build_rebalance_table(current, target):
 
 # ----- STREAMLIT UI -----
 st.set_page_config(page_title="Mutual Fund Allocation & Projection", layout="wide")
-st.title("Mutual Fund Allocation & Projection Web App")
 
 # --- SIDEBAR: USER INPUT ---
 investment, years, risk_profile, allocation, cagr_dict, current_portfolio = sidebar_inputs(
