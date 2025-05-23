@@ -10,7 +10,7 @@ from utils.sidebar import sidebar_inputs
 from utils.currencyFromatter import format_inr
 
 # ----- DEFAULTS -----
-DEFAULT_INVESTMENT = 4000000
+DEFAULT_INVESTMENT = 0
 DEFAULT_YEARS = 5
 DEFAULT_RISK = 'Medium'
 categories = ['Large-Cap', 'Mid-Cap', 'Small-Cap', 'Hybrid']
